@@ -25,6 +25,7 @@ app.service('dataService', function(){
     return quotes;
   };
   this.addData = function(data){
+    console.log('Adding!')
     var obj = {};
     for(var prop in data){
        obj[prop] = data[prop];
@@ -33,6 +34,7 @@ app.service('dataService', function(){
     localStorage.quotes = JSON.stringify(quotes);
   }
   this.removeData = function(text){
+    console.log('Removing!')
     var len = quotes.length;
     for(var i = 0; i < quotes.length; i++){
       if(quotes[i].text === text || quotes[i].author === text){

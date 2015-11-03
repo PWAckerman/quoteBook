@@ -28,8 +28,9 @@ app.controller('mainCtrl', ['$scope', 'dataService', function($scope, dataServic
       var text = $scope.remove;
       dataService.removeData(text);
       $scope.remove = '';
-  }
+  };
   $scope.applySearchFilter = function() {
+    console.log('filtered!')
     $scope.searchTerm = $scope.filterThis;
- }
+  };
 }])
