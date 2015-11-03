@@ -19,16 +19,17 @@ app.service('dataService', function(){
     localStorage.quotes = JSON.stringify(quotes);
   } else {
     var quotes = JSON.parse(localStorage.quotes);
+    console.log(quotes);
   }
   this.getData = function(){
     return quotes;
   };
   this.addData = function(data){
-    // var obj = {};
-    // for(var prop in data){
-    //   obj[prop] = data[prop];
-    // }
-    quotes.unshift(data);
+    var obj = {};
+    for(var prop in data){
+       obj[prop] = data[prop];
+    }
+    quotes.unshift(obj);
     localStorage.quotes = JSON.stringify(quotes);
   }
   this.removeData = function(text){

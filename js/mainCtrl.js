@@ -3,6 +3,16 @@ app.controller('mainCtrl', ['$scope', 'dataService', function($scope, dataServic
   $scope.add = {};
   $scope.add.text = '';
   $scope.add.author = '';
+  $scope.addQb = function(){
+    $scope.show = [true,false,false];
+  }
+  $scope.removeQb = function(){
+    $scope.show = [false,true,false];
+  }
+  $scope.filterQb = function(){
+    $scope.show = [false,false,true];
+  }
+  $scope.show = [true,false,false];
   $scope.returnNew = function(){
     console.log($scope.remove);
   }
