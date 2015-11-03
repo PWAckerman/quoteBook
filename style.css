@@ -1,0 +1,63 @@
+.quote-box {
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(82, 200, 154);
+  color: white;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+.quote{
+  font-size: 20px;
+}
+
+.author{
+  font-size: 14px;
+  font-style: italic;
+  text-align: right;
+}
+
+.container{
+  width: 100%;
+  text-align: center;
+}
+
+input, .text-area {
+  border: 0px;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 10px;
+  outline: none;
+  border-radius: 100px;
+  height: auto;
+}
+
+.text-area {
+  background-color: white;
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+button{
+  border-radius: 100px;
+  padding: 10px 20px;
+  border: 2px solid rgb(222, 172, 131);
+  background-color: white;
+  outline: none;
+  color: rgb(222, 172, 131);
+  text-transform: uppercase;
+  text-transform: full-width;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.left-text{
+  text-align: left;
+}
